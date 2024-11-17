@@ -1,0 +1,248 @@
+@media (max-width: 320px) {
+  ul {
+    padding-inline-start: 0px;
+    margin-left: 0px;
+  }
+
+  .search {
+    margin: 0px auto;
+    display: block;
+  }
+}
+@media (max-width: 768px) {
+  ul {
+    padding-inline-start: 0px;
+  }
+}
+@media (max-width: 375px) {
+  ul {
+    padding-inline-start: 20px;
+    margin-left: 0px;
+  }
+}
+@media (max-width: 425px) {
+  ul {
+    padding-inline-start: 40px;
+    margin-left: 0px;
+  }
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+html {
+  max-width: 100%;
+}
+.up {
+  background-color: lime;
+  margin-top: -8px;
+  text-align: center;
+  color: black;
+  font-family: "Lucida Handwriting", Cursive;
+  font-size: calc(20px + (55 - 20) * ((100vw - 300px) / (1600 - 300)));
+}
+.table2 {
+  text-align: right;
+  margin-top: -8px;
+}
+.table3 {
+  font-size: calc(12px + (16 - 12) * ((100vw - 300px) / (1600 - 300)));
+}
+html {
+  font-size: 72.5%;
+  overflow-x: hidden;
+}
+.menu {
+  cursor: pointer;
+  transition: opacity 500ms easy;
+  color: black;
+}
+.menu:hover {
+  opacity: 0.5;
+}
+body {
+  background: white;
+  background-size: cover;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+}
+.towars {
+  width: 100%;
+
+  text-decoration: none;
+
+  justify-content: center;
+  justify-items: center;
+}
+ul {
+  margin: 25px auto;
+  display: block;
+  align-items: center;
+  width: 100%;
+  list-style-type: none;
+}
+li {
+  margin-left: 10px;
+  margin-top: 10px;
+  display: inline-block;
+}
+.card {
+  width: 140px;
+  height: 285px;
+
+  display: flex;
+  flex-direction: column;
+  border-radius: 14px;
+  position: relative;
+  transition: 0.2s;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+}
+.card:hover {
+  box-shadow: 4px 8px 16px lime;
+}
+.card__top {
+  flex: 0 0 140px;
+  position: relative;
+  overflow: hidden;
+}
+.card__bottom {
+  flex: 1 0 auto;
+  padding: 10px;
+}
+.card__label {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  padding: 4px 8px;
+  background-color: lime;
+  border-radius: 50px;
+  color: white;
+  font-weight: 400;
+}
+.card__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.card__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: 0.3s;
+}
+.card__img img:hover {
+  transform: scale(1.1);
+}
+.card__prices {
+  font-weight: 800;
+  font-size: 14px;
+  display: flex;
+  margin-top: 10px;
+}
+.card__price {
+  width: 50%;
+}
+.card__price::after {
+  content: "грн";
+  margin-left: 4px;
+}
+.card__price--discount {
+  font-weight: 700;
+  color: #414141;
+  display: flex;
+}
+.card__price--common {
+  font-weight: 800;
+  display: flex;
+  color: lime;
+  justify-content: flex-end;
+}
+.card__title {
+  display: block;
+
+  font-weight: 800;
+  color: #414141;
+}
+.card__title:hover {
+  color: lime;
+}
+.card__btn {
+  border-radius: 40px;
+  display: block;
+  width: 100%;
+  font-weight: 400;
+  color: lime;
+  padding: 10px;
+  text-align: center;
+  border: 1px solid lime;
+  background-color: white;
+}
+.card__btn:hover {
+  background-color: lime;
+  color: white;
+}
+input {
+  border: solid 1px black;
+  border-radius: 5px;
+  padding: 7px 14px;
+  margin-bottom: 10px;
+}
+input:focus {
+  outline: none;
+  border-color: lime;
+}
+.sort {
+  width: 150px;
+  padding: 8px 30px;
+  border-radius: 6px;
+  border: none;
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  background-color: Lime;
+  height: 30px;
+}
+.sort:hover {
+  text-decoration: none;
+
+  opacity: 0.7;
+}
+.sort:focus {
+  outline: none;
+}
+.sort:after {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  content: "";
+  position: relative;
+  top: -10px;
+  right: -5px;
+}
+.sort.asc:after {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #fff;
+  content: "";
+  position: relative;
+  top: 13px;
+  right: -5px;
+}
+.sort.desc:after {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid #fff;
+  content: "";
+  position: relative;
+  top: -10px;
+  right: -5px;
+}

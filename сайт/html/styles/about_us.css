@@ -1,0 +1,293 @@
+@media (max-width: 320px) {
+  .text1 {
+    font-size: 7px;
+  }
+}
+.up {
+  background-color: lime;
+  margin-top: -8px;
+  text-align: center;
+  color: black;
+  font-family: "Lucida Handwriting", Cursive;
+  font-size: calc(20px + (55 - 20) * ((100vw - 300px) / (1600 - 300)));
+}
+html {
+  max-width: 100%;
+  display: inline;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.menu {
+  cursor: pointer;
+  transition: opacity 500ms easy;
+  color: black;
+}
+.menu:hover {
+  opacity: 0.5;
+}
+.table2 {
+  text-align: right;
+  margin-top: -8px;
+}
+.table3 {
+  font-size: calc(12px + (16 - 12) * ((100vw - 300px) / (1600 - 300)));
+  font-weight: 900;
+}
+.table4 {
+  width: 100%;
+  border-spacing: 50px;
+}
+
+.menu {
+  cursor: pointer;
+  transition: opacity 500ms easy;
+  color: black;
+}
+.about {
+  align-items: center;
+}
+img {
+  border-radius: 10px;
+}
+.foto1 {
+  transform: rotate(15deg);
+  width: 450px;
+  position: relative;
+  margin-top: 5%;
+  animation-name: spin-in;
+  animation-fill-mode: both;
+  animation-timing-function: linear;
+  view-timeline-name: --spin-in-foto;
+  animation-timeline: --spin-in-foto;
+  animation-range: 10% 60%;
+}
+@keyframes spin-in {
+  from {
+    transform: rotate(0deg);
+
+    opacity: 0;
+  }
+}
+
+.pic {
+  animation-duration: 2.5s;
+  width: 75%;
+  position: relative;
+  transform: translateX(20%);
+}
+.pic::after {
+  content: "Вас вітає Aesthetic Cosmetic Shop!";
+  text-align: center;
+  font-size: 20px;
+  width: 100%;
+  text-shadow: 3px 3px 3px lime;
+  color: rgb(24, 22, 22);
+  top: 50%;
+  left: 1px;
+  position: absolute;
+  font-weight: 900;
+}
+.anim.pic {
+  opacity: 0;
+  transition: all 4s;
+}
+
+.anim.pic.active {
+  opacity: 1;
+}
+
+.s_title {
+  text-shadow: 3px 3px 3px lime;
+  position: absolute;
+  color: rgb(24, 22, 22);
+  margin-left: 24%;
+  margin-top: calc(
+    (180px + (450 - 180) * ((100vw - 300px) / (1600 - 300))) * -1
+  );
+  font-weight: 900;
+}
+.anim.s_title {
+  opacity: 0;
+  transition: all 2s;
+}
+.anim.s_title.active {
+  opacity: 1;
+  font-size: 240%;
+}
+
+@keyframes fade-in {
+  from {
+    font-size: 20%;
+
+    opacity: 0;
+  }
+}
+@keyframes fade-in1 {
+  from {
+    color: lime;
+    opacity: 0;
+  }
+}
+.s_title1 {
+  text-align: center;
+  font-size: 280%;
+  text-shadow: 3px 3px 3px lime;
+  color: rgb(24, 22, 22);
+  margin: 25px auto;
+  display: block;
+  font-weight: 900;
+  animation-name: fade-in;
+  animation-fill-mode: both;
+  animation-timing-function: linear;
+  view-timeline-name: --fade-in-text;
+  animation-timeline: --fade-in-text;
+  animation-range: 10% 60%;
+}
+
+.text1 {
+  text-shadow: 3px 3px 3px lime;
+  font-weight: 900;
+  word-spacing: 4px;
+  letter-spacing: 0px;
+  text-align: center;
+  animation-name: fade-in1;
+  animation-fill-mode: both;
+  animation-timing-function: linear;
+  view-timeline-name: --fade-in1-text;
+  animation-timeline: --fade-in1-text;
+  animation-range: 20% 30%;
+}
+ion-icon {
+  color: lime;
+  font-size: 180px;
+  --ionicon-stroke-width: 32px;
+}
+.footers ion-icon {
+  color: white;
+  font-size: 20px;
+}
+.garant {
+  text-align: center;
+  margin: auto;
+  margin-top: 10px;
+  align-items: center;
+  width: 60%;
+}
+@keyframes slide-right {
+  from {
+    translate: -10vw;
+  }
+}
+@keyframes slide-left {
+  from {
+    translate: 10vw;
+  }
+}
+.from_right {
+  text-shadow: 3px 3px 3px lime;
+  animation-name: slide-right;
+  animation-fill-mode: both;
+  animation-timing-function: linear;
+  view-timeline-name: --slide-right-text;
+  animation-timeline: --slide-right-text;
+  animation-range: 10% 40%;
+}
+
+.from_left {
+  text-shadow: 3px 3px 3px lime;
+  font-weight: 900;
+  font-size: 100%;
+  animation-name: slide-left;
+  animation-fill-mode: both;
+  animation-timing-function: linear;
+  view-timeline-name: --slide-left-text;
+  animation-timeline: --slide-left-text;
+  animation-range: 10% 40%;
+}
+
+.button-1 {
+  animation-name: fade-in;
+  animation-fill-mode: both;
+  animation-timing-function: linear;
+  view-timeline-name: --fade-in-text;
+  animation-timeline: --fade-in-text;
+  animation-range: 10% 20%;
+
+  margin: 25px auto;
+  display: block;
+
+  color: black;
+  background: transparent;
+  border: 1px solid black;
+  position: relative;
+  font-size: 14px;
+  letter-spacing: 0.3em;
+  font-family: "Montserrat", sans-serif;
+  padding: 17px 34px 17px 39px;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+.anim.button-1 {
+  opacity: 0;
+  transition: all 4s;
+}
+
+.anim.button-1.active {
+  opacity: 1;
+}
+.button-1:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 100%;
+  height: 100%;
+  background: lime;
+  z-index: -1;
+  transition: 0.25s ease;
+  transform: translate(0, 0);
+}
+.button-1:hover:before {
+  transform: translate(4px, 4px);
+}
+.end {
+  text-align: center;
+  text-shadow: 3px 3px 3px lime;
+  color: rgb(24, 22, 22);
+  font-size: 200%;
+  line-height: 0.7;
+  font-weight: 900;
+  animation-name: from_down;
+  animation-fill-mode: both;
+  animation-timing-function: linear;
+  view-timeline-name: --from_down-text;
+  animation-timeline: --from_down-text;
+  animation-range: 10% 40%;
+}
+@keyframes from_down {
+  from {
+    transform: translateY(10vw);
+    opacity: 0;
+  }
+}
+.footer {
+  margin: auto;
+  width: 100%;
+  height: 80px;
+
+  background: lime;
+
+  align-items: center;
+
+  flex-direction: column;
+  margin-top: 50px;
+}
+body {
+  height: 100%;
+  background: white;
+  background-size: cover;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="styles/about_us.css">
+  <title>Про нас</title>
+</head>
+<body style="align-items: center;">
+    <div class=up>AestheticCosmeticShop</div>
+
+
+
+<hr style="border-top:1px dotted black;" width=100%>
+
+<table align="left" class=table2 width=10%>
+<tr><td colspan="2"><font size=5 color="gold" face=cursive><b>Відчуй</b></font></td><td></td>
+<td valign="top"><font color="blue" size=5 face=cursive>Красу!</font></td></td>
+
+ </table>
+
+
+
+
+
+
+<table class=table3 color=#bcbcbc width=50% align=center>
+<tr><td><b><a href="index.html"><div class=menu>Головна</div><a></td>
+<td><b><div class=menu><a href="aestheticcosmetic.Товари.html">Товари</a></div></b></td>
+<td><b><div class=menu><font color="lime">Про нас</font></div></b></td>
+<td><b><div class=menu><a href="aestheticcosmetic.Замовити.html">Замовити</a></div></b></td></div></tr>
+</table>
+<hr style="border-top:1px dotted black;" width=100%>
+
+
+
+    
+  <div class="anim pic"><img src="https://litemf.com/ru/journal/wp-content/uploads/2021/12/Zhenskie-duhi-1.jpg" width="100%" height="100%"/></div>
+  
+  
+
+<div class="text1"> Ми – команда професіоналів з м.Білгорода-Дністровського, пристрасно захоплена світом ароматів. Наш інтернет-магазин парфумерії пропонує широкий асортимент оригінальних парфумів від провідних світових брендів. 
+Ми працюємо на ринку парфумерії вже багато років і за цей час здобули довіру тисяч клієнтів.
+  <p>Наша місія – допомогти вам знайти свій ідеальний аромат, який підкреслить вашу індивідуальність та стане вашим невидимим аксесуаром. Ми ретельно відбираємо кожен продукт, щоб гарантувати його високу якість та справжність.</p>
+  У нашому магазині ви знайдете як класичні пахощі, так і новинки парфумерного світу. Ми стежимо за останніми тенденціями та постійно оновлюємо наш асортимент.</div>
+
+  
+<div class="s_title1">Чому обирають нас:</div>
+<table class="garant">
+  <tr style="height: 25%;">
+    <td class="from_right" ><ion-icon name="sparkles-outline"></ion-icon></td>
+<td class="from_left">Лише оригінальні парфуми від відомих брендів.</td></tr>
+<tr><td class="from_right"><ion-icon name="bag-handle-outline"></ion-icon></td>
+<td class="from_left">Великий вибір ароматів для чоловіків та жінок.</td></tr>
+<tr><td class="from_right"><ion-icon name="people-circle-outline"></ion-icon></td>
+<td class="from_left">Наші консультанти допоможуть вам вибрати ідеальний парфум.</td></tr>
+<tr><td class="from_right"><ion-icon name="move-outline"></ion-icon></td>
+<td class="from_left">Ми доставляємо замовлення по всій Україні в найкоротший термін.</td></tr>
+<tr><td class="from_right"><ion-icon name="diamond-outline"></ion-icon></td>
+<td class="from_left">Ми гарантуємо якість нашої продукції.</td></tr>
+  
+</table>
+<div class="end">
+<br>Чого ж ти чекаєш?</br>
+<p>Перейди до нашого магазину й пізнай світ ароматів разом з </p>
+<font style="text-shadow: 1px 1px 2px black, 0 0 25px lime, 0 5px 5px yellow;font-family: Lucida Handwriting,cursive;"> Aesthetic Cosmetic</font></div>
+<button class="button-1"><ion-icon name="caret-forward-circle-outline" style="color:white;font-size: 20px;"><a href="index.html"></ion-icon><b>Перейти</b></a></button>  
+
+<div class="footer"></div>
+<script>
+
+let options = {
+  root: null,
+  rootMargin: '5px',
+  threshold: 0.5
+}
+
+
+
+let callback = function(entries, observer) {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      console.log("find", entry); 
+
+      entry.target.classList.add('active');
+    }
+  });
+}
+
+
+
+let observer = new IntersectionObserver(callback, options);
+
+let targets = document.querySelectorAll('.anim')
+targets.forEach(target => {
+  observer.observe(target);
+});
+
+
+
+</script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
