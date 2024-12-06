@@ -1,10 +1,30 @@
 @media (max-width: 320px) {
-  .container__cards {
-    row-gap: 10px;
-    column-gap: -20px;
+  .ulil {
+    margin-left: 0px;
   }
 }
 
+@media (max-width: 375px) {
+  .ulil {
+    margin-left: 10px;
+    text-align: center;
+  }
+}
+@media (max-width: 425px) {
+  .ulil {
+    margin-left: 0px;
+    text-align: center;
+  }
+}
+@media (max-width: 1024px) {
+  .ulil {
+    margin-left: 0px;
+    text-align: center;
+  }
+}
+main {
+  min-width: 100vh;
+}
 a {
   text-decoration: none;
   color: black;
@@ -54,7 +74,7 @@ button {
   width: 80%;
   margin-left: 10%;
   margin-right: 10%;
-  height: calc(180px + (450 - 180) * ((100vw - 300px) / (1600 - 300)));
+
   overflow: hidden;
   border: 10px solid lime;
 }
@@ -303,9 +323,10 @@ input[name="r"] {
 
   background: lime;
 
+  justify-content: center;
   align-items: center;
-
-  flex-direction: column;
+  width: 100%;
+  padding: 0;
   margin-top: 14px;
 }
 
@@ -358,11 +379,26 @@ input[name="r"] {
   text-decoration: none;
 }
 
-.footers .menu li a:hover {
+.footers .menu a:hover {
   opacity: 1;
 }
 .page {
   display: flex;
   flex-direction: column;
   min-width: 100vh;
+}
+main {
+  height: 1000px;
+}
+.ulil {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  list-style-type: none;
+}
+.lil {
+  margin-left: 10px;
+  margin-top: 10px;
+  display: inline-block;
 }
