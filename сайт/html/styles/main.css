@@ -1,6 +1,12 @@
-@media (max-width: 320px) {
+@media (min-width: 320px) {
   .ulil {
     margin-left: 0px;
+  }
+  .bar {
+    height: 10px;
+    width: 28px;
+    cursor: pointer;
+    margin: 1px;
   }
 }
 
@@ -16,15 +22,19 @@
     text-align: center;
   }
 }
-@media (max-width: 1024px) {
+@media (min-width: 1024px) {
   .ulil {
     margin-left: 0px;
     text-align: center;
   }
+  .bar {
+    height: 16px;
+    width: 48px;
+    cursor: pointer;
+    margin: 6px;
+  }
 }
-main {
-  min-width: 100vh;
-}
+
 a {
   text-decoration: none;
   color: black;
@@ -61,12 +71,12 @@ button {
   vertical-align: middle;
   background-color: rgba(28, 28, 28, 0);
 }
-.menu {
+.menus {
   cursor: pointer;
   transition: opacity 500ms easy;
   color: black;
 }
-.menu:hover {
+.menus:hover {
   opacity: 0.5;
 }
 .slider {
@@ -87,10 +97,6 @@ button {
   display: flex;
 }
 .bar {
-  height: 16px;
-  width: 48px;
-  cursor: pointer;
-  margin: 6px;
   background-color: black;
   border-radius: 10px;
   transition: all 0.7s ease;
@@ -327,7 +333,7 @@ input[name="r"] {
   align-items: center;
   width: 100%;
   padding: 0;
-  margin-top: 14px;
+  margin-top: 80px;
 }
 
 .footers .social_icon,
@@ -385,7 +391,6 @@ input[name="r"] {
 .page {
   display: flex;
   flex-direction: column;
-  min-width: 100vh;
 }
 main {
   height: 1000px;
